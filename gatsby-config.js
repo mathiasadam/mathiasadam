@@ -2,15 +2,15 @@ const { customProperties } = require('./src/variables.js')
 
 module.exports = {
   siteMetadata: {
-    author: 'http://pierre.cx',
-    description: 'madgraphism Senior Product Designer (Blackpills, Kayrros, Soundrop, Flat...)',
+    author: 'mathias adam',
+    description: 'Mathias Awarded Designer (Ultrahuman, BeReal and much more... )',
     siteUrl: 'http://madgraphism.com',
     title: 'Mathias Adam',
     keywords: [
       'madgraphism',
       'da paris',
       'directeur artistique paris',
-      'blackpills',
+      'BeReal',
       'dribbble designer',
       'senior product designer',
       'ui designer',
