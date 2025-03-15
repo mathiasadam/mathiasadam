@@ -1,0 +1,7 @@
+.root {
+  padding: 0 var(--gutter-sm);
+
+  @media (--medium) {
+    padding: 0 var(--gutter-lg);
+  }
+}

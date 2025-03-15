@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "@components/Touchable",
+  "main": "./Touchable.js"
+}

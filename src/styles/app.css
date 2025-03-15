@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-thin);
+  src: url('../fonts/PublicSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-extralight);
+  src: url('../fonts/PublicSans-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-light);
+  src: url('../fonts/PublicSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-regular);
+  src: url('../fonts/PublicSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-medium);
+  src: url('../fonts/PublicSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-semibold);
+  src: url('../fonts/PublicSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-bold);
+  src: url('../fonts/PublicSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-extrabold);
+  src: url('../fonts/PublicSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: var(--fontweight-black);
+  src: url('../fonts/PublicSans-Black.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  transform-origin: 50% 50%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*::selection {
+  background-color: var(--color-accent);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-background);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}*/
+
+html {
+  font-size: 1em;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--fontfamily);
+  font-weight: var(--fontweight-light);
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: var(--gutter-md) 0;
+
+  @media (--medium) {
+    margin: var(--gutter-xs) 0;
+  }
+}
+
+a,
+button,
+p,
+span {
+  font-size: var(--fontsize-md);
+  font-weight: var(--fontweight-medium);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.gatsby-noscript,
+#gatsby-noscript {
+  display: block;
+  padding: var(--gutter-xl);
+  text-align: center;
+}
+
+/* main noscript tag on top of header, injected by gatsby */
+#gatsby-noscript {
+  background: var(--color-accent);
+  line-height: 1;
+  font-size: var(--fontsize-sm);
+  position: fixed;
+  width: 100%;
+  padding: var(--gutter-xs);
+  color: black;
+}
+
+/* inline noscript tag anywhere, injected by us */
+.gatsby-noscript {
+  background: var(--color-background);
+  line-height: var(--fontsize-xxl);
+  font-size: var(--fontsize-md);
+  border-radius: var(--borderradius-md);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.065), 0 -10px 10px rgba(0, 0, 0, 0.065);
+  margin-top: var(--gutter-xl);
+}
+
+#___gatsby,
+div[role='group'][tabindex] {
+  height: 100%;
+}

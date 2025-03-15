@@ -1,0 +1,24 @@
+.root > div {
+  margin-bottom: var(--gutter-md);
+
+  @media (--medium) {
+    text-align: left;
+  }
+}
+
+.root svg {
+  margin: 0 var(--gutter-sm) 0 0;
+}
+
+.root svg {
+  & path {
+    fill: #c6c6c6;
+    transition: fill 320ms;
+  }
+}
+
+.root a:hover svg {
+  & path {
+    fill: #fff;
+  }
+}

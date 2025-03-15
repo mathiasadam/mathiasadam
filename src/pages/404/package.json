@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "@pages/404",
+  "main": "./index.js"
+}

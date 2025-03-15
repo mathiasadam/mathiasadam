@@ -1,0 +1,118 @@
+.root {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: -60px 0px 150px rgba(111, 222, 229, 0.201623), 60px 0px 150px rgba(228, 4, 125, 0.20348),
+    inset 0px 2px 3px rgba(255, 255, 255, 0.168406);
+  border-radius: var(--borderradius-md);
+  padding: var(--gutter-lg) var(--gutter-md);
+  margin: var(--gutter-md);
+
+  @media (--medium) {
+    padding: var(--gutter-md);
+    margin: 0;
+    height: calc(100vh - calc(var(--gutter-lg) * 2));
+  }
+}
+
+.bg {
+  z-index: -1;
+  &,
+  & div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.layer0 {
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: 192% 100%;
+  background-image: radial-gradient(closest-side, rgba(94, 255, 217, 0.29) 0%, rgba(48, 35, 174, 0.07) 99%);
+}
+
+.layer1 {
+  background-repeat: no-repeat;
+  background-position: 140% -50%;
+  background-size: 160% 140%;
+  background-image: radial-gradient(
+    closest-side,
+    #7cf8ec 0%,
+    #56c9f3 37%,
+    rgba(252, 38, 205, 1) 71%,
+    rgba(181, 0, 255, 0) 100%
+  );
+}
+
+.layer2 {
+  background-repeat: no-repeat;
+  background-position: 89% -307%;
+  background-size: 190% 86%;
+  background-image: radial-gradient(closest-side, #06f2ff 0%, #ffca7d 40%, rgba(23, 123, 255, 0) 71%);
+}
+
+.layer3 {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: linear-gradient(45deg, #ff016c 50%, #563eff 90%);
+}
+
+.profilePic {
+  align-self: center;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-bottom: var(--gutter-xl);
+
+  @media (--medium) {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.lead {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  & h1 {
+    color: var(--color-text-light);
+    font-weight: var(--fontweight-extralight);
+    font-size: var(--fontsize-xxl);
+  }
+
+  @media (--medium) {
+    justify-content: flex-start;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: var(--gutter-xl);
+  justify-content: center;
+
+  @media (--medium) {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+
+  & a {
+    flex-shrink: 0;
+    font-size: 18px;
+    margin-right: var(--gutter-md);
+    color: var(--color-text50);
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

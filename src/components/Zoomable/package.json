@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "@components/Zoomable",
+  "main": "./Zoomable.js"
+}

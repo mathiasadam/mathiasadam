@@ -1,0 +1,25 @@
+h1.root {
+  min-height: var(--fontsize-xxl);
+  font-weight: var(--fontweight-light);
+  text-align: center;
+  font-size: var(--fontsize-xl);
+
+  @media (--medium) {
+    font-size: var(--fontsize-xxl);
+    text-align: left;
+  }
+}
+
+h2.root,
+h3.root {
+  min-height: var(--fontsize-lg);
+  font-size: var(--fontsize-lg);
+  font-weight: var(--fontweight-light);
+}
+
+h4.root,
+h5.root {
+  min-height: var(--fontsize-md);
+  font-size: var(--fontsize-md);
+  font-weight: var(--fontweight-regular);
+}

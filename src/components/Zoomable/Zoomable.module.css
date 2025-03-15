@@ -1,0 +1,9 @@
+.root {
+  & .wrapper {
+    transition: transform 200ms ease-in-out;
+    display: inline-block;
+  }
+  &:hover .wrapper {
+    transform: translateY(-3px);
+  }
+}

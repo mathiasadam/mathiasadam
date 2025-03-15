@@ -1,0 +1,13 @@
+.root {
+  display: block;
+  width: var(--gutter-xl);
+  height: var(--gutter-xl);
+  padding: var(--gutter-xs);
+  border: 0;
+  border-radius: var(--borderradius-md);
+  transition: 0.5s;
+
+  & svg {
+    display: block;
+  }
+}

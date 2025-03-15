@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "@components/Companies",
+  "main": "./Companies.js"
+}
